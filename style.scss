@@ -1,0 +1,20 @@
+// SCSS file for Digimon Futures
+@import url(http://fonts.googleapis.com/css?family=Jura);
+$backColor: #00362D;
+$headerBG: #0D5146;
+$borderColor: #551E00;
+$pageFont: Jura;
+
+body{
+	background-color: $backColor;
+	font-family: Jura;
+}
+
+
+// Custom navbar
+.nav-digimon{
+	background-color: blue;
+	border-style: solid;
+	border-color: red;
+	border-width: 2px;
+}
