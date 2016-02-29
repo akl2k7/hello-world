@@ -3,18 +3,36 @@
 $backColor: #00362D;
 $headerBG: #0D5146;
 $borderColor: #551E00;
+$containerBack: #43877B;
 $pageFont: Jura;
+$fontColor: #803A15;
+$headColor: #FFC8AA;
+
+@mixin outOfBody{
+  background-color: $headerBG;
+  color: $headColor;
+}
 
 body{
 	background-color: $backColor;
-	font-family: Jura;
+	color: $fontColor;
+	font-family: $pageFont;
 }
 
+header{
+  @include outOfBody;
+}
+
+footer{
+  @include outOfBody;
+}
+
+// Overridden Boostrap Classes
+.container{
+  background-color: $containerBack;
+}
 
 // Custom navbar
 .nav-digimon{
-	background-color: blue;
-	border-style: solid;
-	border-color: red;
-	border-width: 2px;
+	@include outOfBody;
 }
